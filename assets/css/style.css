@@ -18,14 +18,27 @@ body{
 
 /*-- banner --*/
 .banner{
-	background:url(../../img/8.jpg) no-repeat 0px 0px;
+	background:url(../../img/1.jpg) no-repeat 0px 0px;
 	background-size:cover;
+}
+.banner1{
+    background:url(../../img/2.png) no-repeat 0px 0px;
+    background-size:cover;
+}
+.banner2{
+    background:url(../../img/6.jpg) no-repeat 0px 0px;
+    background-size:cover;
+}
+.banner3{
+    background:url(../../img/4.jpg) no-repeat 0px 0px;
+    background-size:cover;
 }
 .jarallax {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    background-attachment: fixed;
 }
 
 /*-- top-nav --*/
@@ -285,7 +298,7 @@ h3.center {
 
 /*-- team --*/
 .team{
-	background: url(../../img/8.jpg)no-repeat 0px 0px;
+	background: url(../../img/2.png)no-repeat 0px 0px;
 	background-size:cover;
 	background-attachment:fixed;
 }
@@ -430,6 +443,12 @@ li.agileinfo_share {
     font-weight: 600;
 }
 
+.abotnav{
+
+    width: 100px;
+    height: 117px;
+}
+
 /*-- gallery --*/
 .gallery-title{
     color: #2b3945;
@@ -478,7 +497,7 @@ li.agileinfo_share {
 }
 
 /*-- Galery modal --*/
-#myImg {
+.myImg {
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
@@ -486,7 +505,7 @@ li.agileinfo_share {
     height: 200px;
 }
 
-#myImg:hover {opacity: 0.7;}
+.myImg:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
@@ -625,7 +644,7 @@ li.agileinfo_share {
 .price-sec {
     background: #E1E1E1;
     padding-bottom : 2em;
-    background: url(../../img/8.jpg)no-repeat 0px 0px;
+    background: url(../../img/1.jpg)no-repeat 0px 0px;
     background-size:cover;
     background-attachment:fixed;
 }

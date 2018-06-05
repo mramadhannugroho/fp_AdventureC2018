@@ -4,8 +4,9 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
+	<link rel="icon" href="img/logo.png">
 
-	<title>Mata-Mata</title>
+	<title>Gallery | Mata-Mata</title>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,6 +19,8 @@
   	<script type="text/javascript" src="assets/js/load.js"></script>
   	<script type="text/javascript" src="assets/js/gallery.js"></script>
 
+  	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 </head>
 <body>
 	
@@ -29,13 +32,13 @@
 	 </div>
 
 	<!-- banner -->
-	<div class="banner jarallax">
+	<div class="banner3 jarallax">
 		<div class="header-bottom">
 
 			<header id="top">
 				<nav>
 					<a href="index.html"><span class="movetext">Mata - Mata</span></a>
-				   	<a href="index.html"><img src="https://www.matchbook.com/assets/images/icons/white/Twitter_logo_white.png"></a>
+				   	<a href="index.html"><img src="img/logo.png"></a>
 					<a href="index.html">Home</a>
 				    <a href="gallery.html" class="active">Gallery</a>
 				    <a href="about.html">About</a>
@@ -50,10 +53,10 @@
 					<div id="typer">Gallery</div>
 					<div class="top-banner-right">
 						<ul>
-							<li><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a class="facebook" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a class="facebook" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							<li><a class="facebook" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							<li><a class="facebook" href="https://www.facebook.com/profile.php?id=1754932139" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a class="facebook" href="https://twitter.com/Mramadhan_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a class="facebook" href="https://instagram.com/netizen_m1r9n" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a class="facebook" href="https://plus.google.com/u/0/+MRamadhanNugroho" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
 					<div class="ack-phone">
@@ -78,66 +81,65 @@
 
 	        <div align="center">
 	            <button class="btn btn-default filter-button" data-filter="all">All</button>
-	            <button class="btn btn-default filter-button" data-filter="event">Event</button>
+	            <button class="btn btn-default filter-button" data-filter="school">School</button>
 	            <button class="btn btn-default filter-button" data-filter="birthday">Birthday</button>
 	            <button class="btn btn-default filter-button" data-filter="marriage">Marriage</button>
 	            <button class="btn btn-default filter-button" data-filter="other">Other</button>
 	        </div>
 	        <br/>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter event">
-                <img id="myImg" alt="Anjeng" src="http://fakeimg.pl/365x365/" class="img-responsive">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter school">
+                <img class="myImg" onclick="modal(this)" alt="" src="img/gallery/o1.jpg" class="img-responsive">
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter event">
-                <img id="myImg" alt="Anjeng" src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
-                <img id="myImg" alt="Anjeng" src="http://fakeimg.pl/365x365/" class="img-responsive">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter school">
+                <img class="myImg" onclick="modal(this)" alt="" src="img/gallery/o2.jpg" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
-                <img id="myImg" alt="Anjeng" src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <img class="myImg" onclick="modal(this)" alt="" src="img/gallery/p1.jpg" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
-                <img id="myImg" alt="Anjeng" src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <img class="myImg" onclick="modal(this)" alt="" src="img/gallery/p2.jpg" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
-                <img id="myImg" alt="Anjeng" src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <img class="myImg" onclick="modal(this)" alt="" src="img/gallery/p3.jpg" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter marriage">
-                <img id="myImg" alt="Anjeng" src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <img class="myImg" onclick="modal(this)" alt="" src="img/gallery/n1.jpg" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter marriage">
-                <img id="myImg" alt="Anjeng" src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <img class="myImg" onclick="modal(this)" alt="" src="img/gallery/n2.jpg" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter marriage">
-                <img id="myImg" alt="Anjeng" src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <img class="myImg" onclick="modal(this)" alt="" src="img/gallery/n3.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter marriage">
+                <img class="myImg" onclick="modal(this)" alt="" src="img/gallery/n4.jpg" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter other">
-                <img id="myImg" alt="Anjeng" src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <img class="myImg" onclick="modal(this)" alt="" src="img/gallery/e1.jpg" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter other">
-                <img id="myImg" alt="Anjeng" src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <img class="myImg" onclick="modal(this)" alt="" src="img/gallery/e2.jpg" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter other">
-                <img id="myImg" alt="Anjeng" src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <img class="myImg" onclick="modal(this)" alt="" src="img/gallery/e3.jpg" class="img-responsive">
             </div>
         </div>
 
-    	<div id="myModal" class="modal">
+    	<div id="modal01" class="modal" onclick="this.style.display='none'">
 			<span class="close">&times;</span>
 		  	<img class="modal-content" id="img01">
-		  	<div id="caption"></div>
 		</div>
     </div>	
     <!-- //gallery -->
@@ -154,10 +156,10 @@
 			<div class="border"></div>
 			<div class="social">
 				<ul>
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="https://www.facebook.com/profile.php?id=1754932139" target="_blank"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="https://twitter.com/Mramadhan_" target="_blank"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="https://instagram.com/netizen_m1r9n" target="_blank"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="https://plus.google.com/u/0/+MRamadhanNugroho" target="_blank"><i class="fa fa-google-plus"></i></a></li>
 				</ul>
 			</div>
 			<div class="border"></div>
