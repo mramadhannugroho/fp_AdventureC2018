@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+
+	<title>Mata-Mata</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+  	<script type="text/javascript" src="assets/js/scroll.js"></script>
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+  	<script>
+  		var app = angular.module("myApp", ["ngRoute"]);
+		app.config(function($routeProvider) {
+		    $routeProvider
+		    .when("/", {
+		        templateUrl : "route/info.htm"
+		    })
+		    .when("/map", {
+		        templateUrl : "route/map.htm"
+		    })
+		});
+  	</script>
+  	<script type="text/javascript" src="assets/js/load.js"></script>
+
+</head>
+<body ng-app="myApp">
+	
+	<div id="loader-wrapper">
+		 <h2>Loading...</h2>
+		 <div id="loader"></div>
+		 <div class="loader-section section-left"></div>
+		 <div class="loader-section section-right"></div>
+	 </div>
+
+	<!-- banner -->
+	<div class="banner jarallax">
+		<div class="header-bottom">
+
+			<header id="top">
+				<nav>
+					<a href="index.html"><span class="movetext">Mata - Mata</span></a>
+				   	<a href="index.html"><img src="https://www.matchbook.com/assets/images/icons/white/Twitter_logo_white.png"></a>
+					<a href="index.html">Home</a>
+				    <a href="gallery.html">Gallery</a>
+				    <a href="about.html">About</a>
+				    <a href="contact.html" class="active">Contact</a>
+				</nav>
+			</header>
+
+			<div class="container">
+
+				<!-- sm-banner -->
+				<div class="ack-banner">
+					<div id="typer">Contact</div>
+					<div class="top-banner-right">
+						<ul>
+							<li><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a class="facebook" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a class="facebook" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a class="facebook" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+					<div class="ack-phone">
+						<a class="up-arrow" id="godown" href="#next" data-toggle="tooltip" title="GO DOWN">
+	    					<span class="glyphicon glyphicon-chevron-down"></span>
+	  					</a>
+					</div>
+				</div>
+				<!-- //sm-banner -->
+			</div>
+		</div>
+	</div>
+	<!-- //banner -->
+
+	<div id="next"></div>	
+
+	<!-- //footer -->
+	<div class="footer">
+		<div class="container">
+			
+			<div class="contact row text-center">
+
+				<ul class="nav nav-tabs">
+					<li><a href="#next">Contact Info</a></li>
+				  	<li><a href="#!map#next">View Map</a></li>
+				</ul>
+				
+				<div ng-view></div>
+
+			</div>
+		</div>
+<br>
+		<div class="container">
+
+			<div class="social">
+				<a class="up-arrow" id="gotop" href="#top" data-toggle="tooltip" title="TO TOP">
+	    			<span class="glyphicon glyphicon-chevron-up"></span>
+	  			</a>
+  			</div>
+			<div class="border"></div>
+			<div class="social">
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				</ul>
+			</div>
+			<div class="border"></div>
+			<div class="agileits-acklayouts-copyright">
+				<p>© 2018</a></p>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
